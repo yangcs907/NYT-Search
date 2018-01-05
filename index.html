@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NTYSearch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Search Term</label>
+                <input class="form-control" id="inputSearchTerm">
+            </div>
+            <div class="form-group col-md-12">
+                <label>Number of Records to Retrieve</label>
+                <input class="form-control" id="inputNumRecords">
+            </div>
+
+            <div class="form-group col-md-12">
+                <label>Start Year(Optional)</label>
+                <input class="form-control" id="inputStartYear">
+            </div>
+            <div class="form-group col-md-12">
+                <label>End Year(Optional)</label>
+                <input class="form-control" id="inputEndYear">
+            </div>
+        </div>
+        <button type="submit" onclick="formFill(event)" class="btn btn-primary">Search</button>
+        <input class="btn btn-primary" type="reset" value="Clear Results">
+    </form>
+
+    <div id='results'>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./test.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+
+</html>
